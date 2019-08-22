@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.2882205513784461, 0.8796992481203008" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="800.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.client.controller.KondorseController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="239.0" prefWidth="1048.0">
+         <children>
+            <TableView fx:id="tableData" layoutX="68.0" layoutY="52.0" prefHeight="226.0" prefWidth="1048.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="tableNumber" prefWidth="96.0" text="№" />
+                  <TableColumn fx:id="tableType" prefWidth="227.0" text="Тип" />
+                  <TableColumn fx:id="tableRoute" prefWidth="248.0" text="Маршрут" />
+                  <TableColumn fx:id="tableDeparture" prefWidth="241.0" text="Отправление" />
+                  <TableColumn fx:id="tableArrival" prefWidth="235.0" text="Прибытие" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="1048.0" style="-fx-background-color: #009D91;">
+         <children>
+            <Label layoutX="111.0" layoutY="47.0" text="Эксперт 1" />
+            <Label layoutX="247.0" layoutY="46.0" text="Эксперт 2" />
+            <Label layoutX="378.0" layoutY="47.0" text="Эксперт 3" />
+            <TextField fx:id="a11" alignment="CENTER" editable="false" layoutX="589.0" layoutY="94.0" prefWidth="45.0" text="-" />
+            <TextField fx:id="a12" alignment="CENTER" editable="false" layoutX="673.0" layoutY="94.0" prefWidth="45.0" />
+            <TextField fx:id="a13" alignment="CENTER" editable="false" layoutX="758.0" layoutY="94.0" prefWidth="45.0" />
+            <TextField fx:id="a14" alignment="CENTER" editable="false" layoutX="838.0" layoutY="94.0" prefWidth="45.0" />
+            <TextField fx:id="a15" alignment="CENTER" editable="false" layoutX="921.0" layoutY="94.0" prefWidth="45.0" />
+            <Button fx:id="okButton" contentDisplay="CENTER" layoutX="123.0" layoutY="400.0" mnemonicParsing="false" onAction="#findMethod" prefHeight="39.0" prefWidth="223.0" style="-fx-background-color: #39E24D#39E24D;" text="Подобрать" textAlignment="CENTER" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="702.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="a21" alignment="CENTER" editable="false" layoutX="589.0" layoutY="150.0" prefWidth="45.0" />
+            <TextField fx:id="a31" alignment="CENTER" editable="false" layoutX="589.0" layoutY="207.0" prefWidth="45.0" />
+            <TextField fx:id="a41" alignment="CENTER" editable="false" layoutX="589.0" layoutY="264.0" prefWidth="45.0" />
+            <TextField fx:id="a51" alignment="CENTER" editable="false" layoutX="589.0" layoutY="321.0" prefWidth="45.0" />
+            <TextField fx:id="a22" alignment="CENTER" editable="false" layoutX="673.0" layoutY="150.0" prefWidth="45.0" text="-" />
+            <TextField fx:id="a23" alignment="CENTER" editable="false" layoutX="754.0" layoutY="150.0" prefWidth="45.0" />
+            <TextField fx:id="a32" alignment="CENTER" editable="false" layoutX="673.0" layoutY="207.0" prefWidth="45.0" />
+            <TextField fx:id="a33" alignment="CENTER" editable="false" layoutX="758.0" layoutY="207.0" prefWidth="45.0" text="-" />
+            <TextField fx:id="a24" alignment="CENTER" editable="false" layoutX="838.0" layoutY="150.0" prefWidth="45.0" />
+            <TextField fx:id="a25" alignment="CENTER" editable="false" layoutX="921.0" layoutY="150.0" prefWidth="45.0" />
+            <TextField fx:id="a35" alignment="CENTER" editable="false" layoutX="921.0" layoutY="207.0" prefWidth="45.0" />
+            <TextField fx:id="a34" alignment="CENTER" editable="false" layoutX="838.0" layoutY="207.0" prefWidth="45.0" />
+            <TextField fx:id="a42" alignment="CENTER" editable="false" layoutX="673.0" layoutY="264.0" prefWidth="45.0" />
+            <TextField fx:id="a43" alignment="CENTER" editable="false" layoutX="758.0" layoutY="264.0" prefWidth="45.0" />
+            <TextField fx:id="a52" alignment="CENTER" editable="false" layoutX="673.0" layoutY="321.0" prefWidth="45.0" />
+            <TextField fx:id="a53" alignment="CENTER" editable="false" layoutX="758.0" layoutY="321.0" prefWidth="45.0" />
+            <TextField fx:id="a44" alignment="CENTER" editable="false" layoutX="838.0" layoutY="264.0" prefWidth="45.0" text="-" />
+            <TextField fx:id="a54" alignment="CENTER" editable="false" layoutX="838.0" layoutY="321.0" prefWidth="45.0" />
+            <TextField fx:id="a45" alignment="CENTER" editable="false" layoutX="921.0" layoutY="264.0" prefWidth="45.0" />
+            <TextField fx:id="a55" alignment="CENTER" editable="false" layoutX="921.0" layoutY="321.0" prefWidth="45.0" text="-" />
+            <Label fx:id="lv1" layoutX="607.0" layoutY="57.0" text="1" />
+            <Label fx:id="lv2" layoutX="691.0" layoutY="57.0" text="2" />
+            <Label fx:id="lv3" layoutX="776.0" layoutY="57.0" text="3" />
+            <Label fx:id="lv4" layoutX="856.0" layoutY="57.0" text="4" />
+            <Label fx:id="lv5" layoutX="939.0" layoutY="57.0" text="5" />
+            <Label fx:id="lg1" layoutX="553.0" layoutY="99.0" text="1" />
+            <Label fx:id="lg3" layoutX="553.0" layoutY="212.0" text="3" />
+            <Label fx:id="lg4" layoutX="553.0" layoutY="269.0" prefHeight="21.0" prefWidth="9.0" text="4" />
+            <Label fx:id="lg5" layoutX="553.0" layoutY="326.0" text="5" />
+            <Label fx:id="lg2" layoutX="553.0" layoutY="155.0" text="2" />
+            <ComboBox fx:id="comboBox11" layoutX="111.0" layoutY="94.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox12" layoutX="111.0" layoutY="150.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox13" layoutX="111.0" layoutY="207.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox14" layoutX="111.0" layoutY="264.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox15" layoutX="111.0" layoutY="321.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox24" layoutX="247.0" layoutY="264.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox23" layoutX="247.0" layoutY="207.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox22" layoutX="247.0" layoutY="150.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox21" layoutX="247.0" layoutY="94.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox25" layoutX="247.0" layoutY="321.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox33" layoutX="378.0" layoutY="207.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox34" layoutX="378.0" layoutY="264.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox32" layoutX="378.0" layoutY="150.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox31" layoutX="378.0" layoutY="94.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <ComboBox fx:id="comboBox35" layoutX="378.0" layoutY="321.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" />
+            <Button fx:id="cancelButton" contentDisplay="CENTER" layoutX="702.0" layoutY="400.0" mnemonicParsing="false" onAction="#cancelMethod" prefHeight="39.0" prefWidth="223.0" style="-fx-background-color: #FF5240 #FF5240;" text="Назад" textAlignment="CENTER" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="702.0" AnchorPane.rightAnchor="123.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorMessage" layoutX="164.0" layoutY="368.0" text=" " textFill="RED" />
+            <Label fx:id="stringResult" layoutX="361.0" layoutY="365.0" text=" " textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteButton" contentDisplay="CENTER" layoutX="939.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteTrainMethod" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #FFF940;" text="Удалить" textAlignment="CENTER" AnchorPane.rightAnchor="11.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="otchetButton" contentDisplay="CENTER" disable="true" layoutX="413.0" layoutY="400.0" mnemonicParsing="false" onAction="#otchetMethod" prefHeight="39.0" prefWidth="223.0" style="-fx-background-color: #33CCCC#33CCCC;" text="Сделать отчёт" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <TableView fx:id="tableData1" prefHeight="307.0" prefWidth="1048.0">
+         <columns>
+            <TableColumn fx:id="tableNumber1" prefWidth="96.0" text="№" />
+            <TableColumn fx:id="tableType1" prefWidth="227.0" text="Тип" />
+            <TableColumn fx:id="tableRoute1" prefWidth="248.0" text="Маршрут" />
+            <TableColumn fx:id="tableDeparture1" prefWidth="241.0" text="Отправление" />
+            <TableColumn fx:id="tableArrival1" prefWidth="235.0" text="Прибытие" />
+         </columns>
+      </TableView>
+  </items>
+</SplitPane>

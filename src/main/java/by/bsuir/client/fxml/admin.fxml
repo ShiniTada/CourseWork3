@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.2729007633587786" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.client.controller.AdminController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #009D91;">
+         <children>
+            <Button fx:id="addTrainButton" contentDisplay="CENTER" layoutX="36.0" layoutY="61.0" mnemonicParsing="false" onAction="#addTrainMethod" prefHeight="41.0" prefWidth="222.0" style="-fx-background-color: #33CCCC #33CCCC;" text="Добавить рейс" textAlignment="CENTER" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="deleteTrainButton" contentDisplay="CENTER" layoutX="31.0" layoutY="129.0" mnemonicParsing="false" onAction="#deleteTrainMethod" prefHeight="41.0" prefWidth="222.0" style="-fx-background-color: #FF5240 #FF5240;" text="Удалить рейс" textAlignment="CENTER" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="kondorseButton" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="475.0" mnemonicParsing="false" onAction="#kondorseMethod" prefHeight="69.0" prefWidth="97.0" style="-fx-background-color: #33CCCC #33CCCC;" text="Подбор рейса" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="30.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="exitButton" contentDisplay="CENTER" layoutX="30.0" layoutY="576.0" mnemonicParsing="false" onAction="#exitMethod" prefHeight="41.0" prefWidth="222.0" style="-fx-background-color: #FF5240 #FF5240 #FF5240 #FF5240;" text="Выход" textAlignment="CENTER" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="28.0" prefHeight="26.0" prefWidth="222.0" text=" ---------- Рейсы ----------" AnchorPane.leftAnchor="35.5" AnchorPane.rightAnchor="35.5">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="425.0" prefHeight="26.0" prefWidth="222.0" text=" ---- Администратор ----" AnchorPane.leftAnchor="35.5" AnchorPane.rightAnchor="35.5">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Button fx:id="updateButton" contentDisplay="CENTER" layoutX="30.0" layoutY="195.0" mnemonicParsing="false" onAction="#updateMethod" prefHeight="41.0" prefWidth="222.0" style="-fx-background-color: #FFF940;" text="Обновить" textAlignment="CENTER" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="addToSelection" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="475.0" mnemonicParsing="false" onAction="#addToSelectionMethod" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #33CCCC #33CCCC;" text="Добавить в подбор" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="743.0">
+         <children>
+            <TableView fx:id="tableData" layoutX="14.0" prefHeight="648.0" prefWidth="697.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="tableNumber" prefWidth="50.0" text="№" />
+                <TableColumn fx:id="tableType" prefWidth="146.0" text="Тип" />
+                  <TableColumn fx:id="tableRoute" prefWidth="192.0" text="Маршрут" />
+                  <TableColumn fx:id="tableDeparture" prefWidth="183.0" text="Отправление" />
+                  <TableColumn fx:id="tableArrival" prefWidth="191.0" text="Прибытие" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

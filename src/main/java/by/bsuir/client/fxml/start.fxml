@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #009D91;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.client.controller.StartController">
+   <children>
+      <TextField fx:id="loginField" layoutX="69.0" layoutY="127.0" prefHeight="55.0" prefWidth="314.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="33.0" prefHeight="43.0" prefWidth="341.0" text="Расписание поездов">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="sighInButton" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="334.0" mnemonicParsing="false" onAction="#signInMethod" prefHeight="45.0" prefWidth="314.0" style="-fx-background-color: #39E24D#39E24D;" text="Войти" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="sighUpButton" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="403.0" mnemonicParsing="false" onAction="#sighUpMethod" prefHeight="45.0" prefWidth="314.0" style="-fx-background-color: #33CCCC;" text="Регистрация" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="93.0" prefHeight="34.0" prefWidth="73.0" text="Логин">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="189.0" prefHeight="34.0" prefWidth="73.0" text="Пароль">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="69.0" layoutY="223.0" prefHeight="55.0" prefWidth="314.0" />
+      <Label fx:id="wrongSighIn" alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="285.0" prefHeight="27.0" prefWidth="244.0" text="" textFill="#f00000">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+Выбраны следующие рейсы: 
+TrainFlight{number=16, type=SPEEDY, route='Берлин-Москва', departure='21.05_5:00', arrival='27.05_4:34}
+TrainFlight{number=21, type=FAST, route='Прага-Москва', departure='27.05_5:00', arrival='30.05_12:00}
+TrainFlight{number=58, type=HIGH_SPEED, route='Париж-Москва', departure='29.05_14:00', arrival='28.05_17:12}
+TrainFlight{number=87, type=BRANDED, route='Варшава-Москва', departure='29.05_5:00', arrival='28.05_4:34}
+Мнения экспертов: 
+Эксперт 1: [1, 4, 2, 3]
+Эксперт 2: [2, 3, 1, 4]
+Эксперт 3: [3, 2, 4, 1]
+
+
+Наиболее предпочтителен 2 вариант.
+TrainFlight{number=21, type=FAST, route='Прага-Москва', departure='27.05_5:00', arrival='30.05_12:00}

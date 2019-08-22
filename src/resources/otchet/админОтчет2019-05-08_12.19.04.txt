@@ -1,0 +1,11 @@
+Выбраны следующие рейсы: 
+TrainFlight{number=45, type=FAST, route='Варшава-Минск', departure='27.05_5:00', arrival='30.05_12:00}
+TrainFlight{number=23, type=BRANDED, route='Орша-Могилев', departure='28.05_5:00', arrival='28.05_2:30}
+Мнения экспертов: 
+Эксперт 1: [1, 2]
+Эксперт 2: [2, 1]
+Эксперт 3: [2, 1]
+
+
+Наиболее предпочтителен 2 вариант.
+TrainFlight{number=23, type=BRANDED, route='Орша-Могилев', departure='28.05_5:00', arrival='28.05_2:30}

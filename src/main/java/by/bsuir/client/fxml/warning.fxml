@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #009D91;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="72.0" layoutY="28.0" prefHeight="40.0" prefWidth="113.0" text="Ошибка!" textFill="#bf0f0f" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="65.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutY="68.0" prefHeight="86.0" prefWidth="250.0" text="Необходимо добавить от 2 до 5 рейсов" textAlignment="CENTER" textFill="#bf0f0f" wrapText="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

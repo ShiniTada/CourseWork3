@@ -1,0 +1,11 @@
+Выбраны следующие рейсы: 
+TrainFlight{number=23, type=BRANDED, route='Орша-Могилев', departure='28.05_5:00', arrival='28.05_2:30}
+TrainFlight{number=21, type=BRANDED, route='Орша-Брест', departure='29.05_5:00', arrival='28.05_4:34}
+Мнения экспертов: 
+Эксперт 1: [2, 1]
+Эксперт 2: [2, 1]
+Эксперт 3: [1, 2]
+
+
+Наиболее предпочтителен 2 вариант.
+TrainFlight{number=21, type=BRANDED, route='Орша-Брест', departure='29.05_5:00', arrival='28.05_4:34}
